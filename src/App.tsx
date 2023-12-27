@@ -8,10 +8,14 @@ function App() {
   const [movie, setMovie] = useState<Movie | null>(null);
 
   return (
-    <>
-      <SearchBox movie={movie} setMovie={setMovie} />
-      <MovieDetails />
-    </>
+    <div id='eggBox'>
+      <div id='searchBox'>
+        <SearchBox movie={movie} setMovie={setMovie} />
+      </div>
+      <div id='movieDetails'>
+        <MovieDetails />
+      </div>
+    </div>
   )
 }
 
